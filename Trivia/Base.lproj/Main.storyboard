@@ -1,8 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HCx-Zi-lNI">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="grN-Zi-BGB">
+            <objects>
+                <viewController id="HCx-Zi-lNI" customClass="ViewController" customModule="Trivia" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yoI-XY-Jqz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQU-YZ-w3n">
+                                <rect key="frame" x="147" y="269.66666666666669" width="97" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="x6v-4e-W9s"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="New York"/>
+                                <connections>
+                                    <action selector="answerButtonTapped:" destination="HCx-Zi-lNI" eventType="touchUpInside" id="pux-fW-giW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6r-bK-l0W">
+                                <rect key="frame" x="147" y="429.66666666666669" width="97" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="TbA-A5-uUM"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Paris"/>
+                                <connections>
+                                    <action selector="answerButtonTapped:" destination="HCx-Zi-lNI" eventType="touchUpInside" id="g81-9L-dKg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcJ-Bd-MvR">
+                                <rect key="frame" x="147" y="509.66666666666674" width="97" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="FhK-T5-3f3"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Berlin"/>
+                                <connections>
+                                    <action selector="answerButtonTapped:" destination="HCx-Zi-lNI" eventType="touchUpInside" id="eod-gE-Wyi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMD-LB-48f">
+                                <rect key="frame" x="147" y="349.66666666666669" width="97" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6gU-g4-swA"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="London"/>
+                                <connections>
+                                    <action selector="answerButtonTapped:" destination="HCx-Zi-lNI" eventType="touchUpInside" id="Yld-9t-hMS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUK-M7-AkI">
+                                <rect key="frame" x="65" y="180" width="261" height="24.666666666666657"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="What is the capital of France">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="22"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" name="AccentColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="V4c-hw-Pp6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="V4c-hw-Pp6" firstAttribute="trailing" secondItem="bQU-YZ-w3n" secondAttribute="trailing" constant="149" id="08a-19-7c1"/>
+                            <constraint firstItem="V4c-hw-Pp6" firstAttribute="trailing" secondItem="jMD-LB-48f" secondAttribute="trailing" constant="149" id="0RM-6f-h9m"/>
+                            <constraint firstItem="bcJ-Bd-MvR" firstAttribute="top" secondItem="n6r-bK-l0W" secondAttribute="bottom" constant="40" id="15Z-Wf-eQQ"/>
+                            <constraint firstItem="bQU-YZ-w3n" firstAttribute="leading" secondItem="V4c-hw-Pp6" secondAttribute="leading" constant="147" id="1aB-CK-trg"/>
+                            <constraint firstItem="V4c-hw-Pp6" firstAttribute="trailing" secondItem="bQU-YZ-w3n" secondAttribute="trailing" constant="149" id="2Pa-xy-3L8"/>
+                            <constraint firstItem="jMD-LB-48f" firstAttribute="leading" secondItem="V4c-hw-Pp6" secondAttribute="leading" constant="147" id="2u5-cg-G3D"/>
+                            <constraint firstItem="cUK-M7-AkI" firstAttribute="top" secondItem="V4c-hw-Pp6" secondAttribute="top" constant="121" id="8AR-nk-e3T"/>
+                            <constraint firstItem="jMD-LB-48f" firstAttribute="top" secondItem="bQU-YZ-w3n" secondAttribute="bottom" constant="40" id="9Bb-o0-xbk"/>
+                            <constraint firstItem="bQU-YZ-w3n" firstAttribute="leading" secondItem="V4c-hw-Pp6" secondAttribute="leading" constant="147" id="AyX-6k-Axh"/>
+                            <constraint firstItem="V4c-hw-Pp6" firstAttribute="trailing" secondItem="n6r-bK-l0W" secondAttribute="trailing" constant="149" id="F7o-bx-am5"/>
+                            <constraint firstItem="jMD-LB-48f" firstAttribute="top" secondItem="bQU-YZ-w3n" secondAttribute="bottom" constant="40" id="FQe-c6-mIK"/>
+                            <constraint firstItem="bQU-YZ-w3n" firstAttribute="top" secondItem="cUK-M7-AkI" secondAttribute="bottom" constant="65" id="Faq-UJ-n5l"/>
+                            <constraint firstItem="n6r-bK-l0W" firstAttribute="top" secondItem="jMD-LB-48f" secondAttribute="bottom" constant="40" id="Gph-4C-2Hn"/>
+                            <constraint firstItem="bQU-YZ-w3n" firstAttribute="top" secondItem="cUK-M7-AkI" secondAttribute="bottom" constant="65" id="Hfa-td-q72"/>
+                            <constraint firstItem="n6r-bK-l0W" firstAttribute="top" secondItem="jMD-LB-48f" secondAttribute="bottom" constant="40" id="Ib8-QX-gPw"/>
+                            <constraint firstItem="V4c-hw-Pp6" firstAttribute="trailing" secondItem="jMD-LB-48f" secondAttribute="trailing" constant="149" id="Uvl-Rh-9Y6"/>
+                            <constraint firstItem="n6r-bK-l0W" firstAttribute="leading" secondItem="V4c-hw-Pp6" secondAttribute="leading" constant="147" id="V8z-dg-m13"/>
+                            <constraint firstItem="V4c-hw-Pp6" firstAttribute="trailing" secondItem="bcJ-Bd-MvR" secondAttribute="trailing" constant="149" id="Vba-dN-6jG"/>
+                            <constraint firstItem="bQU-YZ-w3n" firstAttribute="leading" secondItem="V4c-hw-Pp6" secondAttribute="leading" constant="147" id="XUd-cy-hUd"/>
+                            <constraint firstItem="jMD-LB-48f" firstAttribute="top" secondItem="bQU-YZ-w3n" secondAttribute="bottom" constant="40" id="XrN-aX-SL1"/>
+                            <constraint firstItem="bQU-YZ-w3n" firstAttribute="top" secondItem="cUK-M7-AkI" secondAttribute="bottom" constant="65" id="Yd4-3z-GaG"/>
+                            <constraint firstItem="V4c-hw-Pp6" firstAttribute="trailing" secondItem="bQU-YZ-w3n" secondAttribute="trailing" constant="149" id="a3G-Zd-D7Z"/>
+                            <constraint firstItem="V4c-hw-Pp6" firstAttribute="trailing" secondItem="cUK-M7-AkI" secondAttribute="trailing" constant="67" id="bCb-x9-CmR"/>
+                            <constraint firstItem="bcJ-Bd-MvR" firstAttribute="top" secondItem="n6r-bK-l0W" secondAttribute="bottom" constant="40" id="gxT-QL-9x0"/>
+                            <constraint firstItem="jMD-LB-48f" firstAttribute="top" secondItem="bQU-YZ-w3n" secondAttribute="bottom" constant="40" id="hV2-BF-C9Y"/>
+                            <constraint firstItem="bcJ-Bd-MvR" firstAttribute="leading" secondItem="V4c-hw-Pp6" secondAttribute="leading" constant="147" id="meK-xr-pfI"/>
+                            <constraint firstItem="cUK-M7-AkI" firstAttribute="leading" secondItem="V4c-hw-Pp6" secondAttribute="leading" constant="65" id="psB-iX-6lj"/>
+                            <constraint firstItem="jMD-LB-48f" firstAttribute="leading" secondItem="V4c-hw-Pp6" secondAttribute="leading" constant="147" id="w45-UI-KTu"/>
+                            <constraint firstItem="n6r-bK-l0W" firstAttribute="top" secondItem="jMD-LB-48f" secondAttribute="bottom" constant="40" id="wR0-0U-WqQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="bQU-YZ-w3n" id="UH8-zG-3Hj"/>
+                        <outlet property="button2" destination="jMD-LB-48f" id="UUe-ah-XVb"/>
+                        <outlet property="button3" destination="n6r-bK-l0W" id="4Pv-JM-olJ"/>
+                        <outlet property="button4" destination="bcJ-Bd-MvR" id="MbB-7V-jge"/>
+                        <outlet property="questionLabel" destination="cUK-M7-AkI" id="G3O-sQ-W18"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="USP-zY-bND" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26.717557251908396" y="-28.169014084507044"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
